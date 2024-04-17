@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="stylesheet" href="estilos/contactostyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e0e4b30e1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="multimedia/logomini.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a href="">¿Que ofrecemos?</a></li>
+                    <li><a href="contacto.html">¡Contactanos!</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>¡Contacta con nosotros!</h1>
+            <p>Diseño, instalación, configuración, puesta en marcha y mantenimiento de redes informáticas. Desarrollamos auditorías e informes sobre el actual <br> estado de su infraestructura, detectamos y prevenimos posibles fallos de red, y aportamos soluciones configurando su red de ordenadores e <br>implementando la seguridad de las redes informáticas: Firewalls, VPNs, etc.</p>
+            <a href="contacto.html" class="hero-btn">¡Contactanos para saber más!</a>
+        </div>
+
+    </section>
+    <!-- Contacto -->
+    
+    <div id="contact">
+        <h1>Formulario de Contacto</h1>
+        <div class="container">
+            <div class="row">
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Tu nombre" required>
+                        <input type="email" name="email" placeholder="Tu email" required>
+                        <textarea name="message" rows="6" placeholder="Tu mensaje"></textarea>
+                        <button type="submit" class="btn btn2">Enviar</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright ©SIV</p>
+    </div>
+</body>
+
+<!-- Scripts -->
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyBkINx5uOFIOvFbD-sifbePJhRbZAoQTIRB4dc4Kocbqh8ewGqNWdaa9ddd5KXBb0y/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "¡Mensaje enviado correctamente!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>

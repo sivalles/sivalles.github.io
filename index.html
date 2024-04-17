@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e0e4b30e1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="multimedia/logomini.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Sobre nosotros</a></li>
+                    <li><a href="">¿Que ofrecemos?</a></li>
+                    <li><a href="contacto.html">¡Contactanos!</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+
+        <div class="text-box">
+            <h1>Instaladores Profesionales de Redes Informáticas</h1>
+            <p>Diseño, instalación, configuración, puesta en marcha y mantenimiento de redes informáticas. Desarrollamos auditorías e informes sobre el actual <br> estado de su infraestructura, detectamos y prevenimos posibles fallos de red, y aportamos soluciones configurando su red de ordenadores e <br>implementando la seguridad de las redes informáticas: Firewalls, VPNs, etc.</p>
+            <a href="contacto.html" class="hero-btn">¡Contactanos para saber más!</a>
+        </div>
+
+    </section>
+
+<!--¿Quienes somos?-->
+    <section class="about">
+        <h1>¿Quienes somos?</h1>
+        <p class="big"> 
+            Bienvenido a SIV, tu socio confiable en el mundo de las redes informáticas. En SIV nos dedicamos a proporcionar soluciones integrales de instalación y mantenimiento de redes informáticas para empresas de todos los tamaños. Con un equipo de instaladores profesionales altamente capacitados y una sólida experiencia en el sector, nos enorgullece ofrecer servicios de alta calidad que garantizan un rendimiento óptimo de tu infraestructura de red.
+            <br><br>
+            En SIV entendemos que una red informática eficiente es fundamental para el éxito de cualquier negocio en la era digital. Ya sea que necesites una instalación desde cero, una actualización de tu infraestructura existente o servicios de mantenimiento regulares, estamos aquí para ayudarte en cada paso del camino. Nuestro compromiso con la excelencia y la satisfacción del cliente nos distingue como líderes en el mercado de instaladores de redes informáticas.
+            <br><br>
+            Explora nuestro sitio web para conocer más sobre nuestros servicios y cómo podemos ayudarte a optimizar tu infraestructura de red. En SIV, estamos listos para llevar tu red al siguiente nivel. ¡Contáctanos hoy mismo!</p>
+    </section>
+
+<!--¿Que ofrecemos?-->
+    <section class="about">
+        <h1>¿Que ofrecemos?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga tempora, at deleniti cum iste blanditiis </p>
+
+        <div class="row">
+            <div class="habilities">
+                <h3>Grandes soluciones</h3>
+                <p>Ofrecemos e instalamos a nuestros clientes soluciones de conectividad en un mismo puesto de trabajo dotado de voz, video, datos y suministros eléctricos para conectar ordenadores, impresoras, servidores. o cualquier tipo de equipo informático o electrónico.</p>
+            </div>
+            <div class="habilities">
+                <h3>Nos adaptamos a lo que necesites</h3>
+                <p>Por lo general, la gran mayoría de las instalaciones de cableado no necesitan ningún tipo de obra por lo que la implementación de la red informática se realiza sin causar muchas molestias para su empresa o negocio adaptanadonos a sus horarios para minimizar la interrupción en su actividad.</p>
+            </div>
+            <div class="habilities">
+                <h3>Nuestro gran personal</h3>
+                <p>Contamos con técnicos y profesionales expertos en todo tipo de instalaciones y soluciones de conectividad, realizamos trabajos a pequeñas oficinas, hogares, centros de enseñanza, pimes y grandes empresas.</p>
+            </div>
+        </div>
+    </section>
+          
+<!--Nuestros Proyectos-->
+    <div id="proyectos">
+        <div class="container">
+            <h1>Nuestros Proyectos</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, itaque vero veniam facilis iure, earum non est magni magnam minima autem amet accusamus quam sint quia quo. Consequuntur, porro! Accusamus.</p>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="multimedia/work-1.png">
+                    <div class="layer">
+                        <h3>Proyecto FNAC</h3>
+                        <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum repellendus est quod ad, magni nam magnam. Impedit, tenetur dolores ea aspernatur commodi delectus? Saepe minus deleniti temporibus quasi! Placeat, incidunt.
+                        </p>
+                        <a href="Proximamente.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="multimedia/work-1.png">
+                </div>
+                <div class="work">
+                    <img src="multimedia/work-1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright ©SIV</p>
+    </div>
+
+
+<!-- Scripts -->
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<!--JavaScript para Abrir / Cerrar el Menú-->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");   
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
+<!-- 35:49 -->
