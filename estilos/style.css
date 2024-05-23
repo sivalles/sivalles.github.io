@@ -3,7 +3,13 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+.zind {
+    position: relative;
+    width: 30px;
+}
+html{
+    scroll-behavior: smooth;
+}
 .header{
     min-height: 100vh;
     width: 100%;
@@ -125,13 +131,26 @@ nav .fa{
     }
 }
 
-/*About*/
-.about{
+/*¿Quienes somos? / ¿Que ofrecemos?*/
+
+#about{
    width: 80%;
    margin: auto;
    text-align: center;
-   padding-top: 100px; 
+   padding-top: 100px;
 }
+#offer{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.row img{
+    border: solid black 2px;
+    width:650px;
+    height: 500px;
+}
+
 h1{
     font-size: 36px;
     font-weight: 600;
@@ -146,7 +165,8 @@ p{
 }
 
 .big{
-    font-size: 20px;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .row{
@@ -180,8 +200,8 @@ h3{
     }
 }
 
-/* Intereses aficiones */
-#proyectos{
+/* Nuestros Proyectos */
+#projects{
     padding: 50px 0;
 }
 .container{
@@ -210,7 +230,7 @@ h3{
 .layer{
     width: 100%;
     height: 0%;
-    background: linear-gradient(rgba(0,0,0,0.6), #D28D35);
+    background: linear-gradient(rgba(0,0,0,0.6), #fff3f3);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -237,7 +257,7 @@ h3{
 
 .layer a{
     margin-top: 20px;
-    color: #ffC800;
+    color: #fff3f3;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;

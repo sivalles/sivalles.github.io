@@ -3,7 +3,9 @@
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-
+html{
+    scroll-behavior: smooth;
+}
 .header{
     min-height: 60vh;
     width: 100%;
@@ -125,6 +127,15 @@ nav .fa{
     }
 }
 
+/* Mapa */
+#map{
+    text-align: center;
+    
+}
+#map h1{
+    text-align: center;
+}
+
 /* Contacto */
 .container{
     background-color: #fff;
@@ -164,7 +175,7 @@ form input, form textarea{
     width: 100%;
     border: 0;
     outline: none;
-    background: #EADEDE;
+    background: #fff3f3;
     padding: 15px;
     margin: 15px 0;
     color: #fff;
@@ -202,4 +213,31 @@ form .btn2{
     padding: 2%;
     text-align: center;
     
+}
+
+/*Clases para (Fnac)*/
+#about{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    
+}
+#about h1{
+    font-size: 40px;
+    padding-bottom: 30px;
+}
+.row img{
+     border: solid black 2px;
+     width:650px;
+     height: 500px;
+}
+ 
+.big{
+    font-size: 18px;
+    text-align: justify;
+}
+
+.justify{
+    text-align: justify;
 }

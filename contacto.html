@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    
     <link rel="stylesheet" href="estilos/contactostyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +11,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/e0e4b30e1b.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <section class="header">
         <nav>
@@ -20,9 +20,8 @@
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">Sobre nosotros</a></li>
-                    <li><a href="">¿Que ofrecemos?</a></li>
-                    <li><a href="contacto.html">¡Contactanos!</a></li>
+                    <li><a href="#contact">Formulario de Contacto</a></li>
+                    <li><a href="#map">¡Nuestras oficinas!</a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -33,10 +32,9 @@
             <p>Diseño, instalación, configuración, puesta en marcha y mantenimiento de redes informáticas. Desarrollamos auditorías e informes sobre el actual <br> estado de su infraestructura, detectamos y prevenimos posibles fallos de red, y aportamos soluciones configurando su red de ordenadores e <br>implementando la seguridad de las redes informáticas: Firewalls, VPNs, etc.</p>
             <a href="contacto.html" class="hero-btn">¡Contactanos para saber más!</a>
         </div>
-
     </section>
-    <!-- Contacto -->
     
+    <!-- Contacto -->
     <div id="contact">
         <h1>Formulario de Contacto</h1>
         <div class="container">
@@ -46,6 +44,7 @@
                         <input type="text" name="name" placeholder="Tu nombre" required>
                         <input type="email" name="email" placeholder="Tu email" required>
                         <textarea name="message" rows="6" placeholder="Tu mensaje"></textarea>
+                        <p><input type="checkbox" name="terms"> Acepto los <u><a href="terminos.html">Terminos y Condiciones</a></u></p>
                         <button type="submit" class="btn btn2">Enviar</button>
                     </form>
                     <span id="msg"></span>
@@ -53,12 +52,20 @@
             </div>
         </div>
     </div>
+
+    <!-- Mapa -->
+    <div id="map">
+        <h1>¡Nuestras oficinas!</h1>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d2116.6441155857883!2d2.1573620640907247!3d41.38740521575984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1s%09CALLE%20ARAGO%2C%20186%20-%20P.%202%20PTA.%204%20Ver%20Mapa!5e0!3m2!1ses!2ses!4v1715064572572!5m2!1ses!2ses" width="70%" height="600px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
     <div class="copyright">
         <p>Copyright ©SIV</p>
     </div>
+
 </body>
 
-<!-- Scripts -->
+<!-- Script Formulario-->
 <script>
     const scriptURL = 'https://script.google.com/macros/s/AKfycbyBkINx5uOFIOvFbD-sifbePJhRbZAoQTIRB4dc4Kocbqh8ewGqNWdaa9ddd5KXBb0y/exec'
     const form = document.forms['submit-to-google-sheet']

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks Installation - SIV</title>
+    
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/e0e4b30e1b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section class="header">
+        <nav>
+            <a href="index.html"><img src="multimedia/logomini.png"></a>
+            
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="#about">Who are we?</a></li>
+                    <li><a href="#offer">What do we offer?</a></li>
+                    <li><a href="#projects">Our project</a></li>
+                    <li><a href="contacto.html">Contact us!</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+            <div><a href="index.html"><img class="zind" src="multimedia/bandera españa.png" alt="bandera españa"></a></div>
+        </nav>
+
+        
+
+        <div class="text-box">
+            <h1>Professional Computer Network Installers</h1>
+            <p>Design, installation, configuration, implementation and maintenance of computer networks. We develop audits and reports on the current <br> We detect and prevent possible network failures, and we provide solutions by configuring your computer network and <br>implementing the security of computer networks: Firewalls, VPNs, etc.</p>
+            <a href="contacto.html" class="hero-btn">Contact us to learn more!</a>
+        </div>
+
+    </section>
+
+<!--¿Quienes somos?-->
+    <section id="about">
+        <h1>Who are we?</h1>
+        <p class="big"> 
+            Welcome to SIV, your reliable partner in the world of computer networks. At SIV we are dedicated to providing comprehensive computer network installation and maintenance solutions for businesses of all sizes. With a team of highly trained professional installers and solid experience in the industry, we pride ourselves in offering high quality services that ensure optimal performance of your network infrastructure.
+            <br><br>
+            At SIV we understand that an efficient IT network is critical to the success of any business in the digital age. Whether you need an installation from scratch, an upgrade to your existing infrastructure or regular maintenance services, we are here to help you every step of the way. Our commitment to excellence and customer satisfaction distinguishes us as a leader in the computer network installer market.
+            <br><br>
+            Explore our website to learn more about our services and how we can help you optimize your network infrastructure. At SIV, we're ready to take your network to the next level - contact us today!</p>
+            
+        <div class="row">
+            <img src="multimedia/instalacion.jpg" alt="">
+            <img src="multimedia/instalacion2.jpg" alt=""> 
+        </div>
+    </section>
+
+<!--¿Que ofrecemos?-->
+    <section id="offer">
+        <h1>What do we offer?</h1>
+        <p>We have the skills that will make you choose us. </p>
+
+        <div class="row">
+            <div class="habilities">
+                <h3>Great solutions</h3>
+                <p>We offer and install connectivity solutions to our customers in the same workstation equipped with voice, video, data and power supplies to connect computers, printers, servers or any type of computer or electronic equipment.</p>
+            </div>
+            <div class="habilities">
+                <h3>We adapt to your needs</h3>
+                <p>In general, the vast majority of cabling installations do not require any type of work so the implementation of the computer network is done without causing much inconvenience to your company or business adapting to your schedule to minimize disruption to your business.</p>
+            </div>
+            <div class="habilities">
+                <h3>Our great staff</h3>
+                <p>We have expert technicians and professionals in all types of installations and connectivity solutions, we perform work to small offices, homes, schools, SMEs and large companies.</p>
+            </div>
+        </div>
+    </section>
+          
+<!--Nuestros Proyectos-->
+    <div id="projects">
+        <div class="container">
+            <h1>Our Projects</h1>
+            <p>Below are the projects we have been involved in.</p>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="multimedia/work.jpg">
+                    <div class="layer">
+                        <h3>FNAC project</h3>
+                        <p>
+                            FNAC contracted our services for the implementation of a network infrastructure, installation of services on servers, creation of a website... more
+                        </p>
+                        <a href="fnac.html"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="multimedia/work-1.png">
+                </div>
+                <div class="work">
+                    <img src="multimedia/work-1.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>Copyright ©SIV</p>
+    </div>
+
+
+<!-- Scripts -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+</script>
+
+<!--JavaScript para Abrir / Cerrar el Menú-->
+<script>
+    
+    var navLinks = document.getElementById("navLinks");   
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+    function hideMenu(){
+        navLinks.style.right = "-200px";
+    }
+
+</script>
+
+</body>
+</html>
+<!-- 35:49 -->
